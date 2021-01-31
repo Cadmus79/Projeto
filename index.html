@@ -20,30 +20,47 @@
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <a class="navbar-brand" href="#">"Pley" the music</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="topmusicas.html"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> TopMusicas</a></li>
                     <li><a href="playlist.html"><span class="glyphicon glyphicon glyphicon-star" aria-hidden="true"></span> PlayList</a></li>
-                    <li><a href="detalhes.html"><span class="glyphicon glyphicon glyphicon-list-alt" aria-hidden="true"></span> Detalhes</a></li>
+                    
                     
                     <input type="text" class="pesquisa-texto" name="" placeholder="Pesquisar">
-                    <a href="#" class="pesquisa-botao">
-                    <span class="glyphicon glyphicon glyphicon-search" aria-hidden="true"></span>
+                    <a href="search.html" class="pesquisa-botao">
+                    <span class="glyphicon glyphicon glyphicon-search" aria-hidden="true"></span></a>
                 </ul>
             </div>
         </div>
     </nav>
+    <!--///////////////////-->
+    <div class="popup" id="first-popup">
+        <div class="overlay"></div>
+        <div class="conteudo">
+            <div class="fechar-btn">&times;</div>
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut in perspiciatis animi at perferendis? Delectus culpa aliquid aperiam sint repellendus commodi beatae ipsam ab, dolore cupiditate, quos qui, optio autem.</p>
+        </div>
+    </div>
+    <!--//////////////////-->
 
     <div class="section">
         <ul class="grelha">
             <li>
-                <div class="box img1">
+                <div onclick="togglePopup()" class="box img1">
                     <a href="#"></a>
                     <div class="text">
-                        <h3>Xutos e Pontapés</h3>
-                        <p>Melhor banda da tuga!</p>
+                        <h3>Artista: Xutos e Pontapés</h3>
+                        <p>Musica: Homem do Leme</p>
+                        <p>Álbum: Cerco</p>
+                        <p>Data de lançamento: 1985</p>
                     </div>
                 </div>
             </li>
@@ -51,8 +68,10 @@
                 <div class="box img2">
                     <a href="#"></a>
                     <div class="text">
-                        <h3>Billie Elilish</h3>
-                        <p>Melhor banda da tuga!</p>
+                        <h3>Artista: Billie Eilish</h3>
+                        <p>Musica: Bad Guy</p>
+                        <p>Álbum: Toggo Music 52</p>
+                        <p>Data de lançamento: 2019</p>
                     </div>
                 </div>
             </li>
@@ -60,8 +79,10 @@
                 <div class="box img3">
                     <a href="#"></a>
                     <div class="text">
-                        <h3>Imagine Dragons</h3>
-                        <p>Melhor banda da tuga!</p>
+                        <h3>Artista: Imagine Dragons</h3>
+                        <p>Musica: Thunder</p>
+                        <p>Álbum: Evolve</p>
+                        <p>Data de lançamento: 2017</p>
                     </div>
                 </div>
             </li>
@@ -69,8 +90,10 @@
                 <div class="box img4">
                     <a href="#"></a>
                     <div class="text">
-                        <h3>Post Malone</h3>
-                        <p>Melhor banda da tuga!</p>
+                        <h3>Artista: Post Malone</h3>
+                        <p>Musica: SunFlower</p>
+                        <p>Álbum: Spider-Man: Into the Spider Verse</p>
+                        <p>Data de lançamento: 2018</p>
                     </div>
                 </div>
             </li>
@@ -78,8 +101,10 @@
                 <div class="box img5">
                     <a href="#"></a>
                     <div class="text">
-                        <h3>Derek Pope</h3>
-                        <p>Melhor banda da tuga!</p>
+                        <h3>Artista: Derek Pope</h3>
+                        <p>Musica: All The Time</p>
+                        <p>Álbum: We're All Strangers</p>
+                        <p>Data de lançamento: 2018</p>
                     </div>
                 </div>
             </li>
@@ -87,8 +112,10 @@
                 <div class="box img6">
                     <a href="#"></a>
                     <div class="text">
-                        <h3>Jeremy Zucker</h3>
-                        <p>Melhor banda da tuga!</p>
+                        <h3>Artista: Lil Nas X</h3>
+                        <p>Musica: Old Town Road</p>
+                        <p>Álbum: 7</p>
+                        <p>Data de lançamento: 2019</p>
                     </div>
                 </div>
             </li>
@@ -96,8 +123,10 @@
                 <div class="box img7">
                     <a href="#"></a>
                     <div class="text">
-                        <h3>Drake</h3>
-                        <p>Melhor banda da tuga!</p>
+                        <h3>Artista: Drake</h3>
+                        <p>Musica: One Dance</p>
+                        <p>Álbum: Views</p>
+                        <p>Data de lançamento: 2016</p>
                     </div>
                 </div>
             </li>
@@ -105,8 +134,10 @@
                 <div class="box img8">
                     <a href="#"></a>
                     <div class="text">
-                        <h3>Xutos e Pontapés</h3>
-                        <p>Melhor banda da tuga!</p>
+                        <h3>Artista: Travis Scott</h3>
+                        <p>Musica: Sicko Mode</p>
+                        <p>Álbum: Astroworld</p>
+                        <p>Data de lançamento: 2018</p>
                     </div>
                 </div>
             </li>
@@ -114,8 +145,10 @@
                 <div class="box img9">
                     <a href="#"></a>
                     <div class="text">
-                        <h3>Xutos e Pontapés</h3>
-                        <p>Melhor banda da tuga!</p>
+                        <h3>Artista: Chris Brown</h3>
+                        <p>Musica: Look At Me Now</p>
+                        <p>Álbum: F.A.M.E.</p>
+                        <p>Data de lançamento: 2011</p>
                     </div>
                 </div>
             </li>
@@ -123,16 +156,14 @@
                 <div class="box img10">
                     <a href="#"></a>
                     <div class="text">
-                        <h3>Xutos e Pontapés</h3>
-                        <p>Melhor banda da tuga!</p>
+                        <h3>Artista: Wet Bed Gang</h3>
+                        <p>Musica: Perseus</p>
+                        <p>Álbum: WBG*</p>
+                        <p>Data de lançamento: 2021</p>
                     </div>
                 </div>
             </li>
         </ul>
     </div>
-
-    <footer>
-        <h4>FOOTER</h4>
-    </footer>
     <script type="text/javascript" src="javascript/javascript.js"></script>
 </body>

@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Top Musicas</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>TopMusicas</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -24,20 +29,56 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="topmusicas.html"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> TopMusicas</a></li>
                     <li><a href="playlist.html"><span class="glyphicon glyphicon glyphicon-star" aria-hidden="true"></span> Favoritos</a></li>
-                    <li><a href="detalhes.html"><span class="glyphicon glyphicon glyphicon-list-alt" aria-hidden="true"></span> Detalhes</a></li>
                     
-                    <input type="text" class="pesquisa-texto" name="" placeholder="Pesquisar">
-                    <a href="#" class="pesquisa-botao">
+                    <!--<input type="text" class="pesquisa-texto" name="" placeholder="Pesquisar">
+                    <a href="search.html" class="pesquisa-botao">
                     <span class="glyphicon glyphicon glyphicon-search" aria-hidden="true"></span>
+                -->
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="centerr">
-        <h1>Pedro</h1>
-
-    </div>
+    <br>
+    <br>
+    <br>
+    <h1 style="color: #00ffbb;">TopMusicas - Nacionais</h1>
+    
+    <div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 style="color: black;" class="panel-title">Top 10 Musicas mais ouvidas em Portugal</h3>			
+		</div>
+		<div class="panel-body">
+			<div class="media-group">
+				<ul class="media-list">
+					<li class="media">
+						<div class="media-left">
+							<a href="" class="thumbnail">
+								<img class="media-object" id="image">
+							</a>						
+						</div>
+						<div class="media-body">
+                            <form id="form-fav" action="playlist.html" method="POST"></form>
+							<h4 class="title media-heading" id="title-fav"></h4>
+							<p>
+                                Artista:
+                                <span class="Artista" id="artista-fav"></span>
+                                <br>
+                                Ouvintes:
+                                <span class="Ouvintes" id="ouvintes-fav"></span>
+                                <br>
+                            </p>
+                            <button type="submit">Adicionar aos favoritos</button>
+                            <button>Remover dos favoritos</button>
+                        </form>
+						</div>						
+					</li>
+				</ul>
+			</div>			
+		</div>		
+	</div>
     <footer>
         <h4>I AM NOT A COPY, I AM GENUINE</h4>
     </footer>
+    <script type="text/javascript" src="javascript/top.js"></script>
+    <script type="text/javascript" src="javascript/playlist.js"></script>
 </body>

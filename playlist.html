@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>Favoritos</title>
 </head>
@@ -24,17 +26,30 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="topmusicas.html"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> TopMusicas</a></li>
                     <li><a href="playlist.html"><span class="glyphicon glyphicon glyphicon-star" aria-hidden="true"></span> Favoritos</a></li>
-                    <li><a href="detalhes.html"><span class="glyphicon glyphicon glyphicon-list-alt" aria-hidden="true"></span> Detalhes</a></li>
                     
                     <input type="text" class="pesquisa-texto" name="" placeholder="Pesquisar">
-                    <a href="#" class="pesquisa-botao">
-                    <span class="glyphicon glyphicon glyphicon-search" aria-hidden="true"></span>
+                    <a href="search.html" class="pesquisa-botao">
+                    <span class="glyphicon glyphicon glyphicon-search" aria-hidden="true"></span></a>
                 </ul>
             </div>
         </div>
     </nav>
+    <br>
+    <br>
+    <br>
+    <h1 style="color: #00ffbb;">Musicas Favoritas</h1>
+
+    <div class="favoritos2">
+        <ul>
+            <li>Titulo:<span id="nome"></span></li>
+            <li>Artista:<span id="idade"></span></li>
+            <li>Ouvintes:<span id="cidade"></span></li>
+        </ul>
+    </div>
 
     <footer>
         <h4>I AM NOT A COPY, I AM GENUINE</h4>
     </footer>
+
+    <script type="text/javascript" src="javascript/playlist.js"></script>
 </body>
