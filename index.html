@@ -30,31 +30,21 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="topmusicas.html"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> TopMusicas</a></li>
-                    <li><a href="playlist.html"><span class="glyphicon glyphicon glyphicon-star" aria-hidden="true"></span> PlayList</a></li>
+                    <li><a href="playlist.html"><span class="glyphicon glyphicon glyphicon-star" aria-hidden="true"></span> Favoritos</a></li>
                     
                     
-                    <input type="text" class="pesquisa-texto" name="" placeholder="Pesquisar">
-                    <a href="search.html" class="pesquisa-botao">
+                    <input id="texto-pesquisa" type="text" class="pesquisa-texto" name="" placeholder="Pesquisar">
+                    <a id="nav-pesquisa" class="pesquisa-botao">
                     <span class="glyphicon glyphicon glyphicon-search" aria-hidden="true"></span></a>
                 </ul>
             </div>
         </div>
     </nav>
-    <!--///////////////////-->
-    <div class="popup" id="first-popup">
-        <div class="overlay"></div>
-        <div class="conteudo">
-            <div class="fechar-btn">&times;</div>
-            <h1>Title</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut in perspiciatis animi at perferendis? Delectus culpa aliquid aperiam sint repellendus commodi beatae ipsam ab, dolore cupiditate, quos qui, optio autem.</p>
-        </div>
-    </div>
-    <!--//////////////////-->
 
     <div class="section">
         <ul class="grelha">
             <li>
-                <div onclick="togglePopup()" class="box img1">
+                <div class="box img1">
                     <a href="#"></a>
                     <div class="text">
                         <h3>Artista: Xutos e Pontapés</h3>
@@ -165,5 +155,6 @@
             </li>
         </ul>
     </div>
-    <script type="text/javascript" src="javascript/javascript.js"></script>
+    <script type="text/javascript" src="javascript/search.js"></script>
+    
 </body>

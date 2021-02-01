@@ -30,10 +30,9 @@
                     <li><a href="topmusicas.html"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> TopMusicas</a></li>
                     <li><a href="playlist.html"><span class="glyphicon glyphicon glyphicon-star" aria-hidden="true"></span> Favoritos</a></li>
                     
-                    <!--<input type="text" class="pesquisa-texto" name="" placeholder="Pesquisar">
-                    <a href="search.html" class="pesquisa-botao">
-                    <span class="glyphicon glyphicon glyphicon-search" aria-hidden="true"></span>
-                -->
+                    <input id="texto-pesquisa" type="text" class="pesquisa-texto" name="" placeholder="Pesquisar">
+                    <a id="nav-pesquisa" class="pesquisa-botao">
+                    <span class="glyphicon glyphicon glyphicon-search" aria-hidden="true"></span></a>
                 </ul>
             </div>
         </div>
@@ -41,7 +40,7 @@
     <br>
     <br>
     <br>
-    <h1 style="color: #00ffbb;">TopMusicas - Nacionais</h1>
+    <h1 class="h1_title">TopMusicas - Nacionais</h1>
     
     <div class="panel panel-default">
 		<div class="panel-heading">
@@ -52,12 +51,11 @@
 				<ul class="media-list">
 					<li class="media">
 						<div class="media-left">
-							<a href="" class="thumbnail">
+							<div class="thumbnail">
 								<img class="media-object" id="image">
-							</a>						
+                            </div>						
 						</div>
-						<div class="media-body">
-                            <form id="form-fav" action="playlist.html" method="POST"></form>
+						<div class="media-body" id="forfav">
 							<h4 class="title media-heading" id="title-fav"></h4>
 							<p>
                                 Artista:
@@ -67,9 +65,8 @@
                                 <span class="Ouvintes" id="ouvintes-fav"></span>
                                 <br>
                             </p>
-                            <button type="submit">Adicionar aos favoritos</button>
-                            <button>Remover dos favoritos</button>
-                        </form>
+                            <button class="add">Adicionar aos favoritos</button>
+                            <button class="remove">Remover dos favoritos</button>
 						</div>						
 					</li>
 				</ul>
@@ -80,5 +77,5 @@
         <h4>I AM NOT A COPY, I AM GENUINE</h4>
     </footer>
     <script type="text/javascript" src="javascript/top.js"></script>
-    <script type="text/javascript" src="javascript/playlist.js"></script>
+    <script type="text/javascript" src="javascript/search.js"></script>
 </body>

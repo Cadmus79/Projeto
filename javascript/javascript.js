@@ -23,12 +23,37 @@ $('#btSearch').on('click', function(){
 			$('.title', liMedia).text(result.name);
 			$('.Artista', liMedia).text(result.artist);
 			$('.Ouvintes', liMedia).text(result.listeners);
+			$(".add", liMedia).click(function () {
+				if (!localStorage.getItem("favoritos")) localStorage.setItem("favoritos", "[]");
+				let favoritos = JSON.parse(localStorage.getItem("favoritos"));
+				if (favoritos.find(x => x.artist.name == result.artist.name && x.name == result.name)) return alert("Esta música já foi adicionada aos favoritos!")
+				favoritos.push({
+					name: result.name,
+					artist: result.artist,
+					ouvintes: result.listeners
+				})
+				localStorage.setItem("favoritos", JSON.stringify(favoritos))
+			})
+			$(".remove", liMedia).click(function () {
+				if (!localStorage.getItem("favoritos")) localStorage.setItem("favoritos", "[]");
+				let favoritos = JSON.parse(localStorage.getItem("favoritos"));
+				for (let i = 0; i < favoritos.length; i++) {
+					if (favoritos[i].name == result.name && favoritos[i].artist.name == result.artist.name) favoritos.splice(i, 1)
+				}
+				localStorage.setItem("favoritos", JSON.stringify(favoritos));
+			})
 			
 			$('.media-list').append(liMedia);
 		})
 	})
 });
 
-function togglePopup(){
-	document.getElementById("first-popup").classList.toggle("active");
-}
+/* Botao de pesquisa da navbar redireciona para a search.html com os resultados */
+
+$(document).ready(function () {
+	if (!localStorage.getItem("pesquisa")) return;
+	$("#pesquisa").val(localStorage.getItem("pesquisa"))
+	$("#btSearch").click();
+	localStorage.removeItem("pesquisa")
+})
+
