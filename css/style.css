@@ -13,9 +13,7 @@ body{
     font-family: 'Comfortaa', cursive;
 }
 
-.container-fluid {
-    padding: 60px 50px;
-}
+/* Navbar de forma responsive */
 
 .navbar {
     margin-bottom: 0;
@@ -47,24 +45,7 @@ body{
     color: #00ffbb !important;
 }
 
-.responsive {
-    width: 100%;
-    height: 100vh;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background: rgba(0, 0, 0, 0.25);
-}
-
-footer{
-    background-color: #1f1f1f; /* Colorir o background do footer*/
-    text-align: center; /* Alinhar o texto ao centro do footer */
-    position: fixed; /* Para colocar o footer sempre fixado no final da página*/
-    bottom: 0; /* Para colocar o footer no fundo da página */
-    width: 100%; /* Para o footer ocupar 100% do espaço na horizontal*/
-    color: white; /* Para o texto inserido no footer ser BRANCO*/
-}
-
+/* Editar a div com class de SECTION que se localiza na homepage*/
 .section{
     max-width: 1920px;
     margin: 0 auto;
@@ -72,6 +53,7 @@ footer{
     color: white; 
 }
 
+/*Criar uma grelha dentro a homepage para cada elementos de uma li*/
 .grelha{
     margin-left: 20px;
     padding: 0;
@@ -81,6 +63,7 @@ footer{
     width: 100%;
 }
 
+/* Editar para cada Listed Item dentro da grealha*/ 
 .grelha li{
     width: 328px;
     height: 328px;
@@ -88,6 +71,7 @@ footer{
     margin: 20px;
 }
 
+/* Editar o conteudo dentro de cada Listed Item*/
 .box{
     width: 100%;
     height: 100%;
@@ -107,9 +91,9 @@ footer{
 
 .box:hover .text h3, .box:hover .text p{
     opacity: 1;
-    
 }
 
+/* Para editar o conteudo dentro de cada Listem Item quando o cursor passa por cima da caixa*/
 .box:hover{
     transform: scale(1.05);
     border: 1px solid #00ffbb;
@@ -120,6 +104,7 @@ footer{
     transition: 0.3s;
 }
 
+/* Apresenta a foto de cada musica na homepage*/
 .img1 {
     width: 100%;
     background: url(../imgs/xp.jpg);
@@ -179,7 +164,7 @@ footer{
     background: url(../imgs/wetbedgang.jpg);
     background-size: 325px;
 }
-
+/* Estilar o espaço de pesquisa que existe na navbar em todas as paginas */
 .pesquisa-texto{
     text-align: center;
     border-radius: 25px;
@@ -192,23 +177,22 @@ footer{
     height: 35px;
 }
 
+/* Estilar a lupa ao lado do espaço de pesquisa */
 .pesquisa-botao{
     line-height: 55px;
     color: #00ffbb;
     width: 25px;
 }
 
+/* Para quando passamos o rato por cima da lupa de pesquisa, ela nao mudar de cor */
 .pesquisa-botao:hover{
     color: #00ffbb;
-}
-
-.favoritos2{
-    color: #00ffbb;;
 }
 
 h1.h1_title, h5.h1_title{
     color: #00ffbb;
 }
+
 h1 {
 	margin-left: 20px;
 }
@@ -227,11 +211,6 @@ h5 {
 	display: inline-block;
 }
 
-.panel-body{
-    color: black;
-    background: none;
-}
-
 .panel-default {
 	margin: 20px;
 }
@@ -241,6 +220,7 @@ h5 {
 	float: left;
 }
 
+/* Imagem do Top musicas, favoritos e search*/
 .thumbnail {
 	border: none;
 }
